@@ -1,110 +1,121 @@
-public abstract class Plugin
+//на обсуждение:
+//    1)    В ConfigCatalog - field:type  пропустил в коде
+//    2)    В VendorDevice.Execute/ControlSwitch.Execute/IPlugin.Execute сейчас плейсхолдер бам
+//    3)    зависимости изображены ф-иями UseXXXXX, мб изменить на что-то более близкое к предмет области
+
+public class ControlSwitch
+{
+    public string ControlSwitchName;
+    public int ControlSwitchCondition;
+
+    public void Execute(string Command)
     {
-        private string name;
-
-        public void GetName()
-        {
-
-        }
-
-        void Execute();
+        Console.WriteLine("бам");
     }
-    public class FactoryDevice : Plugin // реализация (но плагин должен быть интерфейсом по сути,)
+}
+public class SensorReading
+{
+    public string SensorName;
+    public int SensorValue;
+
+    public float GetValue()
     {
-        private string name;
-        private int condition;
-        private string brand;
-        private string ecosystem;
-
-        public void Execute(string command)
-        {
-
-        }
-
+        return SensorValue;
     }
-    public class Detector
+}
+public class VendorDevice : IPlugin 
+{
+    public string VendorDeviceName;
+    public string VendorDeviceManufacturer;
+    public string VendorDeviceEcosystem;
+    public int VendorDeviceCondition;
+
+    public void Execute(string Command)
     {
-        private string name;
-        private int value;
-
-        public void GetValue()
-        {
-
-        }
+        Console.WriteLine("бам");
     }
-    public class ControlElem
+}
+public interface IPlugin //реализация: определение интерфейса и его реализация в классе VendorDevice
+{
+    public void Execute(string Command)
     {
-        private string name;
-        private int condition;
-
-        public void Execute(string command)
-        {
-
-        }
+        Console.WriteLine("бам");
     }
-    public class ConfCatalog
-    { 
-        public void Configure()
-        {
-
-        }
-    }
-    public abstract class SubServer
+    public void UseIPlugin()
     {
-        Detector detector;
-        ControlElem controlElem;
 
-        public SubServer(Detector det, ControlElem contElem)
-        {
-            detector = det; //агрегация — объекты равноправны, передается лишь ссылка на абстрактный класс Detector
-            controlElem = contElem; //агрегация — объекты равноправны, передается лишь ссылка на абстрактный класс ControlElem
-        }
-
-        public void useConfCatalog()
-        {
-            ConfCatalog() c = new ConfCatalog();
-            c.Configure();  //зависимость — просто возвращается ConfCatalog
-
-            //return new ConfCatalog(); //зависимость — просто возвращается Plugin
-        }
     }
-    public class CentralServer
+}
+public interface IFunctional //реализация: определение интерфейса и его реализация в классах SubServer и ConfigCatalog
+{
+    public void FuncTurnOn(bool Value)
     {
-        ConfCatalog catalog;
-        SubServer subserver;
 
-        public CentralServer(Subserver subServ)
-        {
-            catalog = new ConfCatalog();    //композиция — при уничтожении объекта CentralServer будет уничтожен и объект ConfCatalog
-            subserver = subServ;   //агрегация — объекты равноправны, передается лишь ссылка на абстрактный класс SubServer
-        }
-
-        public void usePlugin()
-        {
-            Plugin p = new Plugin();
-            p.GetName();    //зависимость — возвращается Plugin
-
-            //return new Plugin(); //зависимость — возвращается Plugin
-        }
-
-        public void TurnOn(bool amount)
-        {
-
-        }
-        public void TurnOff(bool amount)
-        {
-
-        }
-        public void ChangeBrightness(int amount)
-        {
-
-        }
-        public void Open(bool amount)
-        {
-
-        }
-        public void Close(bool amount)
-        {
-
-        }
     }
+    public void FuncTurnOff(bool Value)
+    {
+
+    }
+    public void FuncChangeBrightness(int Value)
+    {
+
+    }
+    public void FuncOpen(bool Value)
+    {
+
+    }
+    public void FuncClose(bool Value)
+    {
+
+    }
+    public void UseIFunctional()
+    {
+
+    }
+}
+public abstract class SubServer : IFunctional
+{
+    public string Name;
+
+    public SensorReading sensorreading;
+    public ControlSwitch controlswitch;
+
+    public SubServer(SensorReading sensorRe, ControlSwitch controlSw)
+    {
+        sensorreading = sensorRe;   // агрегация: класс SubServer содержит объекты классов SensorReading и ControlSwitch,
+        controlswitch = controlSw;  // при уничтожении объекта SubServer объекты SensorReading и ControlSwitch не будет уничтожены.
+    }
+    public void UseConfigCatalog(ConfigCatalog c) // зависимость: изменения в ConfigCatalog могут повлечь изменения в SubServer
+    {
+        c.UseConfigCatalog();
+    }
+}
+public class ConfigCatalog : IFunctional
+{
+    public void UseConfigCatalog()
+    {
+
+    }
+}
+public class CentralServer
+{
+    public ConfigCatalog configcatalog;
+    public SubServer subserver;
+
+    public CentralServer(SubServer subS)
+    {
+        configcatalog = new ConfigCatalog(); // композиция: класс CentralServer содержит объект класса ConfigCatalog,
+                                             // при уничтожении объекта CentralServer уничтожится и объект ConfigCatalog.
+
+        subserver = subS; // агрегация: класс CentralServer содержит объект класса SubServer,
+                          // при уничтожении объекта CentralServer объект SubServer не будет уничтожен.
+    }
+    public void UseIPlugin(IPlugin p) // зависимость: изменения в IPlugin могут повлечь изменения в CentralServer
+    {
+        p.UseIPlugin();
+    }
+    public void UseIFunctional(IFunctional f) //зависимость, аналогично
+    {
+        f.UseIFunctional();
+    }
+}
