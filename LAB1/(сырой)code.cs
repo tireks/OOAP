@@ -79,7 +79,8 @@
         {
             c.GetState();
         }
-
+        
+        // реализации методов из IFunctional
         public void FuncTurnOn(bool Value)
         {
             Console.WriteLine("бам");
