@@ -62,36 +62,44 @@ namespace ooapLAB
         public SensorReading []sensorreading; //агрегация
         public ControlSwitch []controlswitch;
 
-        public void ObserveConfigCatalog(ConfigCatalog c) // зависимость: изменения в ConfigCatalog могут повлечь изменения в SubServer
-        {
-            c.GetState();
+        public void ExecuteCommand(ControlSwitch switch, string state){
+
         }
 
+        public string GetState(SensorReading sensor){
+
+        }
+
+        // public void ObserveConfigCatalog(ConfigCatalog c) // зависимость: изменения в ConfigCatalog могут повлечь изменения в SubServer
+        // {
+        //     c.GetState();
+        // }
+
         // реализации методов из IFunctional
-        public void FuncTurnOn(bool Value)
-        {
-            Console.WriteLine("бам");
-        }
-        public void FuncTurnOff(bool Value)
-        {
-            Console.WriteLine("бам");
-        }
-        public void FuncChangeBrightness(int Value)
-        {
-            Console.WriteLine("бам");
-        }
-        public void FuncOpen(bool Value)
-        {
-            Console.WriteLine("бам");
-        }
-        public void FuncClose(bool Value)
-        {
-            Console.WriteLine("бам");
-        }
-        public void UseIFunctional()
-        {
-            Console.WriteLine("бам");
-        }
+        // public void FuncTurnOn(bool Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncTurnOff(bool Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncChangeBrightness(int Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncOpen(bool Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncClose(bool Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void UseIFunctional()
+        // {
+        //     Console.WriteLine("бам");
+        // }
     }
     public class ConfigCatalog : IFunctional
     {
@@ -101,10 +109,54 @@ namespace ooapLAB
             
         }
 
-        // реализации методов из IFunctional
-        public void FuncTurnOn(bool Value) 
+        public void SwitchState(string entity)
         {
-            Console.WriteLine("бам");
+            
+        }
+
+        // реализации методов из IFunctional
+        // public void FuncTurnOn(bool Value) 
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncTurnOff(bool Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncChangeBrightness(int Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncOpen(bool Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncClose(bool Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void UseIFunctional()
+        // {
+        //     Console.WriteLine("бам");
+        // }
+    }
+    public class CentralServer : IFunctional
+    {
+        public ConfigCatalog configcatalog = new ConfigCatalog(); //композиция
+        public SubServer []boards; //агрегация
+   
+        public void UseIPlugin(IPlugin p) // зависимость: изменения в IPlugin могут повлечь изменения в CentralServer
+        {
+            p.Execute();
+        }
+        // public void UseIFunctional(IFunctional f) //зависимость, аналогично
+        // {
+        //     f.UseIFunctional();
+        // }
+        public void FuncTurnOn(string entity, SubServer board)
+        {
+            configcatalog.SwitchState(entity)
+            board.ExecuteCommand()
         }
         public void FuncTurnOff(bool Value)
         {
@@ -121,24 +173,6 @@ namespace ooapLAB
         public void FuncClose(bool Value)
         {
             Console.WriteLine("бам");
-        }
-        public void UseIFunctional()
-        {
-            Console.WriteLine("бам");
-        }
-    }
-    public class CentralServer
-    {
-        public ConfigCatalog configcatalog = new ConfigCatalog(); //композиция
-        public SubServer []boards; //агрегация
-   
-        public void UseIPlugin(IPlugin p) // зависимость: изменения в IPlugin могут повлечь изменения в CentralServer
-        {
-            p.UseIPlugin();
-        }
-        public void UseIFunctional(IFunctional f) //зависимость, аналогично
-        {
-            f.UseIFunctional();
         }
     }
 
