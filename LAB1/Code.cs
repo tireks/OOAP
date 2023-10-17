@@ -36,39 +36,24 @@ namespace ooapLAB
     public interface IPlugin //реализация: определение интерфейса и его реализация в классе VendorDevice
     {
         public void Execute(string Command)
-        {
-        }
+       
         public void UseIPlugin()
-        {
-
-        }
+        
     }
     public interface IFunctional //реализация: определение интерфейса и его реализация в классах SubServer и ConfigCatalog
     {
         public void FuncTurnOn(bool Value)
-        {
-
-        }
+       
         public void FuncTurnOff(bool Value)
-        {
-
-        }
+        
         public void FuncChangeBrightness(int Value)
-        {
-
-        }
+       
         public void FuncOpen(bool Value)
-        {
-
-        }
+        
         public void FuncClose(bool Value)
-        {
-
-        }
+        
         public void UseIFunctional()
-        {
-
-        }
+       
     }
     public class SubServer : IFunctional
     {
