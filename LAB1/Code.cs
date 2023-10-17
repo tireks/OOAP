@@ -70,7 +70,7 @@ namespace ooapLAB
 
         }
     }
-    public abstract class SubServer : IFunctional
+    public class SubServer : IFunctional
     {
         public string Name;
 
