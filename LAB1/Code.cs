@@ -55,7 +55,7 @@ namespace ooapLAB
         public void UseIFunctional()
        
     }
-    public class SubServer : IFunctional
+    public class SubServer
     {
         public string Name;
 
@@ -101,10 +101,10 @@ namespace ooapLAB
         //     Console.WriteLine("бам");
         // }
     }
-    public class ConfigCatalog : IFunctional
+    public class ConfigCatalog
     {
         public string []entities;
-        public void GetState()
+        public void GetState(string entity)
         {
             
         }
@@ -142,37 +142,66 @@ namespace ooapLAB
     }
     public class CentralServer : IFunctional
     {
-        public ConfigCatalog configcatalog = new ConfigCatalog(); //композиция
+        private ConfigCatalog configcatalog = new ConfigCatalog(); //композиция
         public SubServer []boards; //агрегация
+        private Dictionary<string, ControlSwitch> switchDict
+        private Dictionary<string, SensorReading> sensorDict
    
-        public void UseIPlugin(IPlugin p) // зависимость: изменения в IPlugin могут повлечь изменения в CentralServer
-        {
-            p.Execute();
-        }
+        
         // public void UseIFunctional(IFunctional f) //зависимость, аналогично
         // {
         //     f.UseIFunctional();
         // }
-        public void FuncTurnOn(string entity, SubServer board)
-        {
-            configcatalog.SwitchState(entity)
-            board.ExecuteCommand()
+
+        /////////////////////////////////
+        // здесь в дальнейшем появится функция-контроллер которая будет определять какую из следующих функций вызвать, 
+        // так же будет передавать в них нужные ентити и борды  
+        /////////////////////////////////
+        
+
+        private SensorReading EntityToSensor(string entity) {
+            //не знаю нужно ли тут писать четко реализацию как будет происходить сопоставление и конвертация
+            return sensorDict[entity]
         }
-        public void FuncTurnOff(bool Value)
-        {
-            Console.WriteLine("бам");
+
+        private ControlSwitch EntityToSwitch(string entity) {
+            //не знаю нужно ли тут писать четко реализацию как будет происходить сопоставление и конвертация
+            return switchDict[entity]
         }
-        public void FuncChangeBrightness(int Value)
+
+        public void UseIPlugin(IPlugin p) // зависимость: изменения в IPlugin могут повлечь изменения в CentralServer
         {
-            Console.WriteLine("бам");
+            p.Execute();
         }
-        public void FuncOpen(bool Value)
+
+        private void FuncSwitchState(string entity, SubServer board, string state)
         {
-            Console.WriteLine("бам");
+            configcatalog.SwitchState(entity, state)
+            board.ExecuteCommand(EntityToSwitch(entity), configcatalog.GetState(entity))
         }
-        public void FuncClose(bool Value)
-        {
-            Console.WriteLine("бам");
+        // private void FuncTurnOff(string entity, SubServer board, string state)
+        // {
+        //     configcatalog.SwitchState(entity)
+        //     board.ExecuteCommand(EntityToSwitch(entity), configcatalog.GetState(entity))
+        // }
+        // private void FuncChangeBrightness(string entity, SubServer board, string state)
+        // {
+        //     configcatalog.SwitchState(entity)
+        //     board.ExecuteCommand(EntityToSwitch(entity), configcatalog.GetState(entity))
+        // }
+        // private void FuncOpen(string entity, SubServer board, string state)
+        // {
+        //     configcatalog.SwitchState(entity)
+        //     board.ExecuteCommand(EntityToSwitch(entity), configcatalog.GetState(entity))
+        // }
+        // private void FuncClose(string entity, SubServer board, string state)
+        // {
+        //     configcatalog.SwitchState(entity)
+        //     board.ExecuteCommand(EntityToSwitch(entity), configcatalog.GetState(entity))
+        // }
+
+        private string CallForState(string entity, SubServer board){
+            return board.GetState(EntityToSensor(entity))
         }
     }
 
