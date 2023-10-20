@@ -55,90 +55,153 @@ namespace ooapLAB
         public void UseIFunctional()
        
     }
-    public class SubServer : IFunctional
+    public class SubServer
     {
         public string Name;
 
         public SensorReading []sensorreading; //агрегация
         public ControlSwitch []controlswitch;
 
-        public void ObserveConfigCatalog(ConfigCatalog c) // зависимость: изменения в ConfigCatalog могут повлечь изменения в SubServer
-        {
-            c.GetState();
+        public void ExecuteCommand(ControlSwitch switch, string state){
+
         }
 
+        public string GetState(SensorReading sensor){
+
+        }
+
+        // public void ObserveConfigCatalog(ConfigCatalog c) // зависимость: изменения в ConfigCatalog могут повлечь изменения в SubServer
+        // {
+        //     c.GetState();
+        // }
+
         // реализации методов из IFunctional
-        public void FuncTurnOn(bool Value)
-        {
-            Console.WriteLine("бам");
-        }
-        public void FuncTurnOff(bool Value)
-        {
-            Console.WriteLine("бам");
-        }
-        public void FuncChangeBrightness(int Value)
-        {
-            Console.WriteLine("бам");
-        }
-        public void FuncOpen(bool Value)
-        {
-            Console.WriteLine("бам");
-        }
-        public void FuncClose(bool Value)
-        {
-            Console.WriteLine("бам");
-        }
-        public void UseIFunctional()
-        {
-            Console.WriteLine("бам");
-        }
+        // public void FuncTurnOn(bool Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncTurnOff(bool Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncChangeBrightness(int Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncOpen(bool Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncClose(bool Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void UseIFunctional()
+        // {
+        //     Console.WriteLine("бам");
+        // }
     }
-    public class ConfigCatalog : IFunctional
+    public class ConfigCatalog
     {
         public string []entities;
-        public void GetState()
+        public void GetState(string entity)
+        {
+            
+        }
+
+        public void SwitchState(string entity)
         {
             
         }
 
         // реализации методов из IFunctional
-        public void FuncTurnOn(bool Value) 
-        {
-            Console.WriteLine("бам");
-        }
-        public void FuncTurnOff(bool Value)
-        {
-            Console.WriteLine("бам");
-        }
-        public void FuncChangeBrightness(int Value)
-        {
-            Console.WriteLine("бам");
-        }
-        public void FuncOpen(bool Value)
-        {
-            Console.WriteLine("бам");
-        }
-        public void FuncClose(bool Value)
-        {
-            Console.WriteLine("бам");
-        }
-        public void UseIFunctional()
-        {
-            Console.WriteLine("бам");
-        }
+        // public void FuncTurnOn(bool Value) 
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncTurnOff(bool Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncChangeBrightness(int Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncOpen(bool Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void FuncClose(bool Value)
+        // {
+        //     Console.WriteLine("бам");
+        // }
+        // public void UseIFunctional()
+        // {
+        //     Console.WriteLine("бам");
+        // }
     }
-    public class CentralServer
+    public class CentralServer : IFunctional
     {
-        public ConfigCatalog configcatalog = new ConfigCatalog(); //композиция
+        private ConfigCatalog configcatalog = new ConfigCatalog(); //композиция
         public SubServer []boards; //агрегация
+        private Dictionary<string, ControlSwitch> switchDict
+        private Dictionary<string, SensorReading> sensorDict
    
+        
+        // public void UseIFunctional(IFunctional f) //зависимость, аналогично
+        // {
+        //     f.UseIFunctional();
+        // }
+
+        /////////////////////////////////
+        // здесь в дальнейшем появится функция-контроллер которая будет определять какую из следующих функций вызвать, 
+        // так же будет передавать в них нужные ентити и борды  
+        /////////////////////////////////
+        
+
+        private SensorReading EntityToSensor(string entity) {
+            //не знаю нужно ли тут писать четко реализацию как будет происходить сопоставление и конвертация
+            return sensorDict[entity]
+        }
+
+        private ControlSwitch EntityToSwitch(string entity) {
+            //не знаю нужно ли тут писать четко реализацию как будет происходить сопоставление и конвертация
+            return switchDict[entity]
+        }
+
         public void UseIPlugin(IPlugin p) // зависимость: изменения в IPlugin могут повлечь изменения в CentralServer
         {
-            p.UseIPlugin();
+            p.Execute();
         }
-        public void UseIFunctional(IFunctional f) //зависимость, аналогично
+
+        private void FuncSwitchState(string entity, SubServer board, string state)
         {
-            f.UseIFunctional();
+            configcatalog.SwitchState(entity, state)
+            board.ExecuteCommand(EntityToSwitch(entity), configcatalog.GetState(entity))
+        }
+        // private void FuncTurnOff(string entity, SubServer board, string state)
+        // {
+        //     configcatalog.SwitchState(entity)
+        //     board.ExecuteCommand(EntityToSwitch(entity), configcatalog.GetState(entity))
+        // }
+        // private void FuncChangeBrightness(string entity, SubServer board, string state)
+        // {
+        //     configcatalog.SwitchState(entity)
+        //     board.ExecuteCommand(EntityToSwitch(entity), configcatalog.GetState(entity))
+        // }
+        // private void FuncOpen(string entity, SubServer board, string state)
+        // {
+        //     configcatalog.SwitchState(entity)
+        //     board.ExecuteCommand(EntityToSwitch(entity), configcatalog.GetState(entity))
+        // }
+        // private void FuncClose(string entity, SubServer board, string state)
+        // {
+        //     configcatalog.SwitchState(entity)
+        //     board.ExecuteCommand(EntityToSwitch(entity), configcatalog.GetState(entity))
+        // }
+
+        private string CallForState(string entity, SubServer board){
+            return board.GetState(EntityToSensor(entity))
         }
     }
 
