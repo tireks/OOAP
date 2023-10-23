@@ -146,6 +146,8 @@ namespace ooapLAB
         public SubServer []boards; //агрегация
         private Dictionary<string, ControlSwitch> switchDict
         private Dictionary<string, SensorReading> sensorDict
+
+        private Dictionary<string, SubServer> boardsDict
    
         
         // public void UseIFunctional(IFunctional f) //зависимость, аналогично
@@ -169,6 +171,10 @@ namespace ooapLAB
             return switchDict[entity]
         }
 
+        private SubServer detectBoard(string entity){
+            return boardsDict[entity]
+        }
+
         public void UseIPlugin(IPlugin p) // зависимость: изменения в IPlugin могут повлечь изменения в CentralServer
         {
             p.Execute();
@@ -177,7 +183,7 @@ namespace ooapLAB
         private void FuncSwitchState(string entity, SubServer board, string state)
         {
             configcatalog.SwitchState(entity, state)
-            board.ExecuteCommand(EntityToSwitch(entity), configcatalog.GetState(entity))
+            board.ExecuteCommand(EntityToSwitch(entity), state)
         }
         // private void FuncTurnOff(string entity, SubServer board, string state)
         // {
@@ -201,7 +207,7 @@ namespace ooapLAB
         // }
 
         private string CallForState(string entity, SubServer board){
-            return board.GetState(EntityToSensor(entity))
+            configcatalog.SwitchState(entity,board.GetState(EntityToSensor(entity)))
         }
     }
 
