@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-10-24T08:48:04.517Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="ZnePp4W-xMB3odTrP-Fz" version="22.0.6" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-26T03:45:34.553Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="lW-3CD77YtAon_HVXt-U" version="22.0.8" type="github">
   <diagram name="Страница — 1" id="7XJXOi6I81zIxPAY55vA">
-    <mxGraphModel dx="1827" dy="1619" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2440" dy="1885" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -39,7 +39,7 @@
         <mxCell id="f9nnDBReMJu9jYWD7Z0J-39" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="f9nnDBReMJu9jYWD7Z0J-1" vertex="1">
           <mxGeometry x="50" y="220" width="20" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="f9nnDBReMJu9jYWD7Z0J-40" value="funcSwitchState(entity, board, state)" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="f9nnDBReMJu9jYWD7Z0J-1" source="f9nnDBReMJu9jYWD7Z0J-10" edge="1">
+        <mxCell id="f9nnDBReMJu9jYWD7Z0J-40" value="funcChangeState(entity, board, state)" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="f9nnDBReMJu9jYWD7Z0J-1" source="f9nnDBReMJu9jYWD7Z0J-10" edge="1">
           <mxGeometry x="0.1667" y="15" relative="1" as="geometry">
             <mxPoint x="55" y="200" as="sourcePoint" />
             <Array as="points">
@@ -84,7 +84,7 @@
         <mxCell id="f9nnDBReMJu9jYWD7Z0J-49" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="f9nnDBReMJu9jYWD7Z0J-41" vertex="1">
           <mxGeometry x="85" y="240" width="10" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="f9nnDBReMJu9jYWD7Z0J-50" value="switchState(entity, state)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" parent="1" source="f9nnDBReMJu9jYWD7Z0J-39" target="f9nnDBReMJu9jYWD7Z0J-49" edge="1">
+        <mxCell id="f9nnDBReMJu9jYWD7Z0J-50" value="changeState(entity, state)" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=5;" parent="1" source="f9nnDBReMJu9jYWD7Z0J-39" target="f9nnDBReMJu9jYWD7Z0J-49" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="475" y="-865" as="sourcePoint" />
           </mxGeometry>
