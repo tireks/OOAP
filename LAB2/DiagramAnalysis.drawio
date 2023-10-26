@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-10-26T04:03:47.435Z" agent="Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Mobile/15E148 Safari/604.1" etag="leMh5aYu_EOWH2s-1OuB" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-26T04:06:21.981Z" agent="Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Mobile/15E148 Safari/604.1" etag="As6ue1DD3w0A0R8-deJ_" version="22.0.8" type="github">
   <diagram name="Страница — 1" id="B7_EgXtic_XTBQ914R1s">
-    <mxGraphModel dx="447" dy="636" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1086" dy="1546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="8pQAa1wgGIv0_HNlRwhK-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Включить лампочку.&lt;/b&gt;&lt;br&gt;&lt;br&gt;Объект User изменяет состояние лампочки в приложении на экране переключателями (1) – граничный класс ControlSwitchScreen. &lt;br&gt;&lt;br&gt;Граничный класс посылает сообщение (2) контроллеру boardController о том, что необходимо найти плату, соответствующую лампочке.&lt;br&gt;&lt;br&gt;boardController обращается к&amp;nbsp; контроллеру stateController (3), чтобы изменить состояние соответствующей лампочки.&lt;br&gt;&lt;br&gt;Управляющий объект обращается к соответствующей сущности LightSwitch (4)&amp;nbsp;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=16;fontFamily=Verdana;" parent="1" vertex="1">
-          <mxGeometry x="40" y="320" width="520" height="340" as="geometry" />
+        <mxCell id="8pQAa1wgGIv0_HNlRwhK-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Включить лампочку.&lt;/b&gt;&lt;br&gt;&lt;br&gt;Объект User изменяет состояние лампочки в приложении на экране переключателями (1) – граничный класс ControlSwitchScreen. &lt;br&gt;&lt;br&gt;Граничный класс посылает сообщение (2) контроллеру boardController о том, что необходимо найти плату, соответствующую лампочке.&lt;br&gt;&lt;br&gt;boardController обращается к&amp;nbsp; контроллеру stateController (3), чтобы изменить состояние соответствующей лампочки.&lt;br&gt;&lt;br&gt;Управляющий объект обращается к соответствующей сущности LightSwitch (4)&amp;nbsp;&lt;br&gt;&lt;br&gt;stateController &amp;nbsp;обновляет экоан пользовательского интерфейса (5)&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=16;fontFamily=Verdana;" parent="1" vertex="1">
+          <mxGeometry x="70" y="320" width="520" height="340" as="geometry" />
         </mxCell>
         <mxCell id="8agiEXOs-_Uzl_Cm2DTF-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="8agiEXOs-_Uzl_Cm2DTF-1" target="8agiEXOs-_Uzl_Cm2DTF-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
@@ -15,16 +15,6 @@
         </mxCell>
         <mxCell id="8agiEXOs-_Uzl_Cm2DTF-4" value="" style="shape=umlBoundary;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="200" y="67.5" width="60" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="yjJu7aATLmZ8ZDfvRkCJ-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.833;entryY=0.944;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="40.00000000000003" y="540" as="targetPoint" />
-            <mxPoint x="565.02" y="545.02" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="565.02" y="720.02" />
-              <mxPoint x="40.02000000000001" y="720.02" />
-            </Array>
-          </mxGeometry>
         </mxCell>
         <mxCell id="8agiEXOs-_Uzl_Cm2DTF-14" value="" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="750" y="65" width="50" height="50" as="geometry" />
