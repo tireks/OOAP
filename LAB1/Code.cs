@@ -137,18 +137,10 @@ namespace ooapLAB
 
             do
             {
-                try
-                {
                     board.ExecuteCommand(Cswitch, state);
-                    board.GetState(Cswitch);
-
-                }
-                catch (Exception e)
-                {
-
-                }
+                    NewState = board.GetState(Cswitch);
             }
-            while ();
+            while (NewState != state);
         }
 
         private string CallForState(string entity, SubServer board)
