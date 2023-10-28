@@ -1,0 +1,16 @@
+<mxfile host="app.diagrams.net" modified="2023-10-28T08:27:39.818Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46" etag="Uvo9xx26nbxPhKLsu_wc" version="22.0.8" type="github">
+  <diagram name="Страница — 1" id="74rSGt7yE-Hl-KrqymNY">
+    <mxGraphModel dx="1396" dy="1099" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lys92XvBiPoYoFadNUBL-1" value="&lt;b id=&quot;docs-internal-guid-218764f1-7fff-161a-42b7-2b2507a9b1ee&quot; style=&quot;font-weight:normal;&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 700; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Диаграмма пакетов&lt;/span&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;. Проанализировать отсутствие взаимных зависимостей.&lt;/span&gt;&lt;/b&gt;&lt;br&gt;" style="text;strokeColor=none;fillColor=none;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-396" y="-70" width="471" height="57" as="geometry" />
+        </mxCell>
+        <mxCell id="lys92XvBiPoYoFadNUBL-2" value="UI Framework" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-396" y="8" width="226" height="129" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
