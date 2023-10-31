@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-10-30T18:51:05.943Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="80Tga6__sPFDwG41R-vC" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-31T03:55:23.320Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="NgJEoTEMMaPEjI3OFqMp" version="22.0.8" type="github">
   <diagram name="Страница — 1" id="PwmKHHaf_U7UQAFED_Nw">
     <mxGraphModel dx="994" dy="461" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -58,7 +58,7 @@
         <mxCell id="Imng76tVTM7-OfBX1pzr-14" value="«deploy»" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;rotation=270;" vertex="1" parent="1">
           <mxGeometry x="150" y="290" width="70" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Imng76tVTM7-OfBX1pzr-15" value="«device»&lt;br&gt;&lt;div style=&quot;&quot;&gt;SensorReading&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=center;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="Imng76tVTM7-OfBX1pzr-15" value="«device»&lt;br&gt;&lt;div style=&quot;&quot;&gt;Sensor&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=center;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="600" y="59.480000000000004" width="140" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Imng76tVTM7-OfBX1pzr-16" value="«device»&lt;br&gt;&lt;div style=&quot;&quot;&gt;ControlSwitch&lt;br&gt;&lt;/div&gt;" style="verticalAlign=top;align=center;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
