@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-06T04:06:00.644Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="5tn76PwJrMMk7vO7MNG3" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-06T04:07:24.813Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="I7Ov1Sx_GkrxFATFjCEp" version="22.0.8" type="github">
   <diagram name="Страница — 1" id="PwmKHHaf_U7UQAFED_Nw">
     <mxGraphModel dx="884" dy="384" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -112,7 +112,7 @@
         <mxCell id="Imng76tVTM7-OfBX1pzr-44" value="LAN" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="554.58" y="140" width="50" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Imng76tVTM7-OfBX1pzr-45" value="Система представлена пятью типами устройств, объединённых в локальную сеть. ПО содержится лишь на центральном сервере и включает в себя два артефакта&amp;nbsp;—&amp;nbsp;исполняемый файл и конфигурационный каталог, а также среду исполнения PluginService, которая в свою очередь содержит свой артефакт в виде исполняемого файла. Элементы SubServer, Sensor и ControlSwitch представляют собой физические элементы системы -- плату, подключенные к ней&amp;nbsp;сенсоры и электронные переключатели, своего програмного обеспечения они не содержат." style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="Imng76tVTM7-OfBX1pzr-45" value="Система представлена пятью типами устройств, объединённых в локальную сеть. ПО содержится лишь на центральном сервере и включает в себя два артефакта&amp;nbsp;—&amp;nbsp;исполняемый файл и конфигурационный каталог, а также среду исполнения PluginService, которая в свою очередь содержит свой артефакт в виде исполняемого файла. Элементы SubServer, Sensor и ControlSwitch представляют собой физические элементы системы -- плату, подключенные к ней&amp;nbsp;сенсоры и электронные переключатели, своего программного обеспечения они не содержат." style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="320" y="250" width="460" height="120" as="geometry" />
         </mxCell>
       </root>
