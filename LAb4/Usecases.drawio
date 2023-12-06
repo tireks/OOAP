@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-06T20:34:19.570Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="cSJBClJRRspHzARE77_X" version="22.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-06T20:37:56.518Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="m739o_Z5XYaApL2btdvo" version="22.1.7" type="github">
   <diagram name="Страница — 1" id="LTqVgdhhhah4Ef-IsAjk">
-    <mxGraphModel dx="2246" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2247" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -72,6 +72,9 @@
         </mxCell>
         <mxCell id="8Lzk3z1pBCngfyzM7mtx-24" value="&quot;Почистить&quot; прошивку платы" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-15" y="160" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="7xNzpW6Ljf1oBYX3WRYf-2" value="&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Для данной системы предусмотрено два актёра: пользователь и администратор.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Пользователь – человек, которому доступны два основных варианта использования. Он&amp;nbsp; может видеть показатели сенсоров и изменять состояние управляющих элементов, таким образом обеспечивается возможность повседневного пользования системой умного дома (изменение освещения, контроль работы подключённых к системе бытовых приборов и так далее).&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Администратор – в отличие от рядового пользователя имеет дополнительные варианты использования: он может добавлять и убирать сенсоры и управляющие элементы (&quot;Добавить сенсор\упр. элемент&quot; и &quot;Убрать сенсор\упр. элемент&quot; соответственно). Сценарий добавления устройств реализуется вариантами использования &quot;Выбрать плагин&quot; и &quot;Выбрать плату&quot; (на диаграмме изображено прямой линией с треугольной стрелкой). При этом добавление устройства обязательно включает в себя сценарий &quot;Внести в каталог&quot;. Действие &quot;Убрать сенсор\упр. элемент устройства&quot; подразумевает его неизбежное удаление из каталога (&quot;Удалить из каталога&quot;). Опциональным действием является &quot;Почистить&quot; прошивку платы&quot;, позволяющее в случае необходимости внести более масштабные изменения в устройство системы.&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="455" width="800" height="260" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
