@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-06T20:52:29.609Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="aYYeuLlCAf3t8YeGTC4t" version="22.1.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-07T08:03:10.364Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="l4ychtvxK0CFJAAHwyO1" version="22.1.7" type="github">
   <diagram name="Страница — 1" id="LTqVgdhhhah4Ef-IsAjk">
-    <mxGraphModel dx="1996" dy="542" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2192" dy="593" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,12 +13,7 @@
         <mxCell id="8Lzk3z1pBCngfyzM7mtx-1" value="Администратор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
           <mxGeometry x="310" y="150" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="8Lzk3z1pBCngfyzM7mtx-9" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;endArrow=open;endFill=0;dashed=1;dashPattern=12 12;" parent="1" source="8Lzk3z1pBCngfyzM7mtx-4" target="8Lzk3z1pBCngfyzM7mtx-8" edge="1">
-          <mxGeometry x="-0.6841" y="-34" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="8Lzk3z1pBCngfyzM7mtx-4" value="Добавить сенсор\&lt;br&gt;упр. элемент" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="8Lzk3z1pBCngfyzM7mtx-4" value="&lt;i&gt;Добавить сенсор\&lt;br&gt;упр. элемент&lt;/i&gt;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="420" y="150" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8Lzk3z1pBCngfyzM7mtx-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="8Lzk3z1pBCngfyzM7mtx-5" target="8Lzk3z1pBCngfyzM7mtx-14" edge="1">
@@ -42,8 +37,8 @@
         <mxCell id="8Lzk3z1pBCngfyzM7mtx-7" value="Выбрать плату" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="600" y="170" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="8Lzk3z1pBCngfyzM7mtx-8" value="Внести в каталог" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="480" y="240" width="120" height="60" as="geometry" />
+        <mxCell id="8Lzk3z1pBCngfyzM7mtx-8" value="Развернуть сенсор\&lt;br&gt;упр. элемент" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="310" y="70" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8Lzk3z1pBCngfyzM7mtx-14" value="Запросить сводку по сенсору" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="90" y="280" width="140" height="70" as="geometry" />
@@ -51,19 +46,8 @@
         <mxCell id="8Lzk3z1pBCngfyzM7mtx-15" value="Изменить состояние упр. элемента" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="380" y="360" width="140" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="8Lzk3z1pBCngfyzM7mtx-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=block;endFill=0;" parent="1" source="8Lzk3z1pBCngfyzM7mtx-1" target="8Lzk3z1pBCngfyzM7mtx-5" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="8Lzk3z1pBCngfyzM7mtx-23" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=12 12;endArrow=open;endFill=0;" parent="1" source="8Lzk3z1pBCngfyzM7mtx-20" target="8Lzk3z1pBCngfyzM7mtx-22" edge="1">
-          <mxGeometry x="-0.75" y="-25" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="8Lzk3z1pBCngfyzM7mtx-20" value="Убрать сенсор\&lt;br&gt;упр. элемент" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="150" y="110" width="130" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="8Lzk3z1pBCngfyzM7mtx-22" value="Удалить из каталога" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="-20" y="80" width="140" height="70" as="geometry" />
         </mxCell>
         <mxCell id="8Lzk3z1pBCngfyzM7mtx-25" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=12 12;endArrow=open;endFill=0;" parent="1" source="8Lzk3z1pBCngfyzM7mtx-24" target="8Lzk3z1pBCngfyzM7mtx-20" edge="1">
           <mxGeometry x="0.4183" y="-19" relative="1" as="geometry">
@@ -75,6 +59,13 @@
         </mxCell>
         <mxCell id="7xNzpW6Ljf1oBYX3WRYf-2" value="&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Для данной системы предусмотрено два актёра: пользователь и администратор.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Пользователь &lt;/b&gt;– человек, которому доступны два основных варианта использования. Он&amp;nbsp; может видеть показатели сенсоров и изменять состояние управляющих элементов, таким образом обеспечивается возможность повседневного пользования системой умного дома (изменение освещения, контроль работы подключённых к системе бытовых приборов и так далее).&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Администратор &lt;/b&gt;– в отличие от рядового пользователя имеет дополнительные варианты использования: он может добавлять и убирать сенсоры и управляющие элементы (&lt;i&gt;&quot;Добавить сенсор\упр. элемент&quot;&lt;/i&gt; и &lt;i&gt;&quot;Убрать сенсор\упр. элемент&quot;&lt;/i&gt; соответственно). Сценарий добавления устройств реализуется вариантами использования &lt;i&gt;&quot;Выбрать плагин&quot;&lt;/i&gt; и &lt;i&gt;&quot;Выбрать плату&quot;&lt;/i&gt; (т.к. для изменения состава элементов системы необходимо сначала выяснить их принадлежность к тому или иному субсерверу). При этом добавление устройства обязательно включает в себя сценарий &lt;i&gt;&quot;Внести в каталог&quot; &lt;/i&gt;(изменение данных конфигурационного каталога). Действие &lt;i&gt;&quot;Убрать сенсор\упр. элемент устройства&quot;&lt;/i&gt; подразумевает его неизбежное удаление из конфигурационного каталога (&lt;i&gt;&quot;Удалить из каталога&quot;&lt;/i&gt;). Опциональным действием является &lt;i&gt;&quot;Почистить&quot; прошивку платы&quot;&lt;/i&gt;, позволяющее в случае необходимости внести более масштабные изменения в устройство системы.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontFamily=Times New Roman;" parent="1" vertex="1">
           <mxGeometry x="-20" y="455" width="800" height="285" as="geometry" />
+        </mxCell>
+        <mxCell id="OE0huEzDASAAwvuuLTIl-3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=12 12;endArrow=open;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="8Lzk3z1pBCngfyzM7mtx-4" target="8Lzk3z1pBCngfyzM7mtx-8">
+          <mxGeometry x="0.4183" y="-19" relative="1" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="114" y="184" as="sourcePoint" />
+            <mxPoint x="500" y="100" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
