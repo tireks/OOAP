@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-12-14T02:45:19.787Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="BFKVB6nmbnmbdTrp7k2p" version="22.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-12-14T09:16:08.041Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="TLL4Dy65UNPrrTFapMc7" version="22.1.8" type="github" pages="2">
   <diagram name="Страница — 1" id="4VPVh0jdXXFnkS001Gz_">
-    <mxGraphModel dx="1593" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1766" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -122,6 +122,141 @@
         </mxCell>
         <mxCell id="L15Q_ider17hOIwXuhBm-41" value="" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" vertex="1" parent="1">
           <mxGeometry x="585" y="680" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="rKtnXt4hB0JbBkFDS8Ug-1" value="&#xa;&lt;span style=&quot;color: rgb(225, 227, 230); font-family: -apple-system, BlinkMacSystemFont, Roboto, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Noto Sans Armenian&amp;quot;, &amp;quot;Noto Sans Bengali&amp;quot;, &amp;quot;Noto Sans Cherokee&amp;quot;, &amp;quot;Noto Sans Devanagari&amp;quot;, &amp;quot;Noto Sans Ethiopic&amp;quot;, &amp;quot;Noto Sans Georgian&amp;quot;, &amp;quot;Noto Sans Hebrew&amp;quot;, &amp;quot;Noto Sans Kannada&amp;quot;, &amp;quot;Noto Sans Khmer&amp;quot;, &amp;quot;Noto Sans Lao&amp;quot;, &amp;quot;Noto Sans Osmanya&amp;quot;, &amp;quot;Noto Sans Tamil&amp;quot;, &amp;quot;Noto Sans Telugu&amp;quot;, &amp;quot;Noto Sans Thai&amp;quot;, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(34, 34, 34); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Диаграмма разделена на два раздела («плавательные дорожки»), которые позволяют рассмотреть процесс со стороны пользователя и сервера отдельно.&lt;/span&gt;&lt;br style=&quot;color: rgb(225, 227, 230); font-family: -apple-system, BlinkMacSystemFont, Roboto, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Noto Sans Armenian&amp;quot;, &amp;quot;Noto Sans Bengali&amp;quot;, &amp;quot;Noto Sans Cherokee&amp;quot;, &amp;quot;Noto Sans Devanagari&amp;quot;, &amp;quot;Noto Sans Ethiopic&amp;quot;, &amp;quot;Noto Sans Georgian&amp;quot;, &amp;quot;Noto Sans Hebrew&amp;quot;, &amp;quot;Noto Sans Kannada&amp;quot;, &amp;quot;Noto Sans Khmer&amp;quot;, &amp;quot;Noto Sans Lao&amp;quot;, &amp;quot;Noto Sans Osmanya&amp;quot;, &amp;quot;Noto Sans Tamil&amp;quot;, &amp;quot;Noto Sans Telugu&amp;quot;, &amp;quot;Noto Sans Thai&amp;quot;, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(34, 34, 34); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(225, 227, 230); font-family: -apple-system, BlinkMacSystemFont, Roboto, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Noto Sans Armenian&amp;quot;, &amp;quot;Noto Sans Bengali&amp;quot;, &amp;quot;Noto Sans Cherokee&amp;quot;, &amp;quot;Noto Sans Devanagari&amp;quot;, &amp;quot;Noto Sans Ethiopic&amp;quot;, &amp;quot;Noto Sans Georgian&amp;quot;, &amp;quot;Noto Sans Hebrew&amp;quot;, &amp;quot;Noto Sans Kannada&amp;quot;, &amp;quot;Noto Sans Khmer&amp;quot;, &amp;quot;Noto Sans Lao&amp;quot;, &amp;quot;Noto Sans Osmanya&amp;quot;, &amp;quot;Noto Sans Tamil&amp;quot;, &amp;quot;Noto Sans Telugu&amp;quot;, &amp;quot;Noto Sans Thai&amp;quot;, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(34, 34, 34); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Перед пользователем стоит задача – включить лампочку (отображено в соответствующем блоке действия), из чего уже на начальном этапе следует два возможных исхода (узел решения) – продолжение алгоритма и аварийный выход в случае, если осветительный прибор не интегрирован в систему.&lt;/span&gt;&lt;br style=&quot;color: rgb(225, 227, 230); font-family: -apple-system, BlinkMacSystemFont, Roboto, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Noto Sans Armenian&amp;quot;, &amp;quot;Noto Sans Bengali&amp;quot;, &amp;quot;Noto Sans Cherokee&amp;quot;, &amp;quot;Noto Sans Devanagari&amp;quot;, &amp;quot;Noto Sans Ethiopic&amp;quot;, &amp;quot;Noto Sans Georgian&amp;quot;, &amp;quot;Noto Sans Hebrew&amp;quot;, &amp;quot;Noto Sans Kannada&amp;quot;, &amp;quot;Noto Sans Khmer&amp;quot;, &amp;quot;Noto Sans Lao&amp;quot;, &amp;quot;Noto Sans Osmanya&amp;quot;, &amp;quot;Noto Sans Tamil&amp;quot;, &amp;quot;Noto Sans Telugu&amp;quot;, &amp;quot;Noto Sans Thai&amp;quot;, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(34, 34, 34); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;&quot;&gt;&lt;span style=&quot;color: rgb(225, 227, 230); font-family: -apple-system, BlinkMacSystemFont, Roboto, &amp;quot;Open Sans&amp;quot;, &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Noto Sans Armenian&amp;quot;, &amp;quot;Noto Sans Bengali&amp;quot;, &amp;quot;Noto Sans Cherokee&amp;quot;, &amp;quot;Noto Sans Devanagari&amp;quot;, &amp;quot;Noto Sans Ethiopic&amp;quot;, &amp;quot;Noto Sans Georgian&amp;quot;, &amp;quot;Noto Sans Hebrew&amp;quot;, &amp;quot;Noto Sans Kannada&amp;quot;, &amp;quot;Noto Sans Khmer&amp;quot;, &amp;quot;Noto Sans Lao&amp;quot;, &amp;quot;Noto Sans Osmanya&amp;quot;, &amp;quot;Noto Sans Tamil&amp;quot;, &amp;quot;Noto Sans Telugu&amp;quot;, &amp;quot;Noto Sans Thai&amp;quot;, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(34, 34, 34); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Далее сервер проверяет доступность устройства (в случае невозможности взаимодействия выдаёт соответствующее предупреждение), проверяет нужно ли вообще менять состояние (т.к. лампочка на этот момент уже может быть включена – в этом случае также предусмотрен аварийный выход с выводом ошибки на экран). В случае продолжения алгоритма сервер последовательно производит следующие действия: изменяет состояние в конф. файле, подаёт напряжение на определённый контакт платы и выводит факт изменения на экран.&lt;/span&gt;&#xa;&#xa;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-180" y="1070" width="710" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="3wa_d_u4tG8ksLezFPA1" name="Страница — 2">
+    <mxGraphModel dx="1982" dy="595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-1" value="&lt;span style=&quot;&quot; id=&quot;docs-internal-guid-36fbc556-7fff-6ebc-dd4b-fb18f65ab0c7&quot;&gt;&lt;span style=&quot;font-size: 11pt; font-family: Arial, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline;&quot;&gt;Диаграмма состояний персонажа игры жанра «платформер»&lt;br&gt;&lt;/span&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-792" y="30" width="470" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="M64Ee_IDbqb6N9-p_Eb8-3" target="M64Ee_IDbqb6N9-p_Eb8-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-3" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-742" y="355.00000000000006" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-4" value="&lt;b&gt;Нейтральное&lt;/b&gt;(idle)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-686" y="325" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-5" value="&lt;b&gt;Прыжок&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-686" y="100" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-6" value="&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;Бег&lt;/b&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;do/ бежать выбранном направлении" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-147.54" y="325" width="112.54" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-7" value="&lt;b&gt;Присесть&lt;/b&gt;&lt;br&gt;do/ сидеть на поверхности" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-676" y="555" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-8" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="M64Ee_IDbqb6N9-p_Eb8-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-636" y="510" as="sourcePoint" />
+            <mxPoint x="-641" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-9" value="удерживается «присесть» / персонаж приседает&amp;nbsp;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="M64Ee_IDbqb6N9-p_Eb8-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-52" y="-32" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-10" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="M64Ee_IDbqb6N9-p_Eb8-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-631" y="425" as="sourcePoint" />
+            <mxPoint x="-556" y="415" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-556" y="415" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-11" value="отпускается «присесть» / персонаж встаёт" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="M64Ee_IDbqb6N9-p_Eb8-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="64" y="35" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-12" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="M64Ee_IDbqb6N9-p_Eb8-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-506" y="355" as="sourcePoint" />
+            <mxPoint x="-406" y="355" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-506" y="348" />
+              <mxPoint x="-402" y="348" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-13" value="удерж «бег» [персонаж идет]/ персонаж бежит&amp;nbsp;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="M64Ee_IDbqb6N9-p_Eb8-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-14" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.013;exitY=0.878;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.993;entryY=0.86;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="M64Ee_IDbqb6N9-p_Eb8-6" target="M64Ee_IDbqb6N9-p_Eb8-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-506" y="385" as="sourcePoint" />
+            <mxPoint x="-396" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-15" value="&amp;nbsp;[персонаж не идет] / персонаж возвр. в нейтрал. сост." style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="M64Ee_IDbqb6N9-p_Eb8-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-16" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="M64Ee_IDbqb6N9-p_Eb8-6" target="M64Ee_IDbqb6N9-p_Eb8-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-146" y="90" as="sourcePoint" />
+            <mxPoint x="-46" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-17" value="нажат «прыжок» / персонаж прыгает&amp;nbsp;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="M64Ee_IDbqb6N9-p_Eb8-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-84" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-18" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0.713;entryY=-0.002;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.713;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-532.0000000000001" y="190.54000000000002" as="sourcePoint" />
+            <mxPoint x="-532.0000000000001" y="325.00000000000006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-19" value="[персонаж [на земле] / персонаж приземлился." style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="M64Ee_IDbqb6N9-p_Eb8-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-20" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-662" y="320" as="sourcePoint" />
+            <mxPoint x="-662" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-21" value="нажат «прыжок» / персонаж прыгает&amp;nbsp;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="M64Ee_IDbqb6N9-p_Eb8-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint y="-35" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-22" value="" style="endArrow=classic;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="M64Ee_IDbqb6N9-p_Eb8-6" target="M64Ee_IDbqb6N9-p_Eb8-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-312" y="500" as="sourcePoint" />
+            <mxPoint x="-342" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-23" value="удерживается «присесть» / персонаж останавливается и приседает&amp;nbsp;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="M64Ee_IDbqb6N9-p_Eb8-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-107" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-24" value="&lt;h1 style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;В состоянии &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Нейтральное(idle):&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;если игроком удерживается «бег»&amp;nbsp;на устройстве ввода, при условии, что персонаж идёт, то персонаж&amp;nbsp;в игре бежит → переходит в состояние &lt;/span&gt;Бег&lt;span style=&quot;font-weight: normal;&quot;&gt;.&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 16px; font-weight: normal;&quot;&gt;если игроком нажат «прыжок», то персонаж прыгает → переходит в состояние &lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 16px;&quot;&gt;Прыжок&lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 16px; font-weight: normal;&quot;&gt;.&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;h1 style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;если игроком удерживается «присесть», то персонаж приседает→ переходит в состояние &lt;/span&gt;Присесть&lt;span style=&quot;font-weight: normal;&quot;&gt;.&lt;/span&gt;&lt;/h1&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=16;flipV=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="-800" y="700" width="400" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-25" value="&lt;h1 style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;В состоянии &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Бег:&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;если персонаж не идет, то персонаж&amp;nbsp;в игре останавливается → переходит в состояние&amp;nbsp;&lt;/span&gt;Нейтральное(idle).&lt;/h1&gt;&lt;h1 style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;если игроком нажат «прыжок», то персонаж прыгает → переходит в состояние &lt;/span&gt;&lt;span style=&quot;background-color: initial; font-size: 16px;&quot;&gt;Прыжок&lt;/span&gt;&lt;span style=&quot;font-weight: normal; background-color: initial; font-size: 16px;&quot;&gt;.&lt;/span&gt;&lt;/h1&gt;&lt;div&gt;&lt;h1 style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;если игроком удерживается «присесть», то персонаж останавливается и приседает→ переходит в состояние &lt;/span&gt;Присесть&lt;span style=&quot;font-weight: normal;&quot;&gt;.&lt;/span&gt;&lt;/h1&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=16;flipV=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="-800" y="925" width="390" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-26" value="&lt;h1 style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;В состоянии &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Прыжок:&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;если персонаж на земле, то персонаж приземлился → переходит в состояние&amp;nbsp;&lt;/span&gt;Нейтральное(idle).&lt;/h1&gt;&lt;h1 style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=16;flipV=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="-340" y="700" width="340" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="M64Ee_IDbqb6N9-p_Eb8-27" value="&lt;h1 style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;background-color: initial; font-weight: normal;&quot;&gt;В состоянии &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Присесть:&lt;/span&gt;&lt;/h1&gt;&lt;h1 style=&quot;border-color: var(--border-color); font-size: 16px;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;если игрок отпускает «присесть», то персонаж встаёт → переходит в состояние&amp;nbsp;&lt;/span&gt;Нейтральное(idle).&lt;/h1&gt;&lt;h1 style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/h1&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontSize=16;flipV=1;flipH=1;" vertex="1" parent="1">
+          <mxGeometry x="-340" y="845" width="330" height="105" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
