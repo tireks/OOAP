@@ -1,13 +1,12 @@
 package com.tirexmurina.nonsingleton.screen
 
+import androidx.activity.compose.BackHandler
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -18,8 +17,10 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.collectAsState
-import androidx.compose.runtime.getValue
+import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.mutableStateListOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
@@ -36,23 +37,51 @@ import com.tirexmurina.nonsingleton.presentation.HomeViewModel
 
 @Composable
 fun HomeScreen(
-    homeViewModel: HomeViewModel = viewModel()
+    homeViewModel: HomeViewModel = viewModel(),
+    onNoteClick: (String) -> Unit
 ){
-    val notesList by homeViewModel.list.collectAsState()
-    HomeScreenContent(notesList = notesList)
+    val notesList = homeViewModel.list
+    HomeScreenContent(
+        notesList = notesList,
+        dbId = homeViewModel.dbId,
+        onAddClick = { homeViewModel.addNote() },
+        onDeleteClick = {},
+        onNoteClick = { onNoteClick(it) }
+    )
 }
 
 @Composable
 fun HomeScreenContent(
-    notesList: MutableList <Note>
+    notesList: SnapshotStateList<Note>,
+    dbId: String,
+    onAddClick: () -> Unit,
+    onDeleteClick: (String) -> Unit,
+    onNoteClick: (String) -> Unit
+
 ){
     Column (){
+        Row (
+            modifier = Modifier.padding(
+                start = 8.dp,
+                end = 8.dp
+            )
+        ){
+            Text(
+                text = "DB id:",
+                modifier = Modifier.padding(end = 16.dp)
+            )
+            Text(text = dbId)
+        }
         LazyColumn(
             modifier = Modifier
                 .weight(1f)
         ){
             items(notesList) { item ->
-                SingleNoteItem(note = item)
+                SingleNoteItem(
+                    note = item,
+                    onDeleteClick = { onDeleteClick(it) },
+                    onNoteClick = {onNoteClick(it)}
+                )
             }
         }
         Button(
@@ -64,7 +93,7 @@ fun HomeScreenContent(
                     top = 8.dp,
                     bottom = 8.dp
                 ),
-            onClick = { /*TODO*/ }
+            onClick = { onAddClick() }
         ) {
             Text(
                 modifier = Modifier.padding(
@@ -81,10 +110,15 @@ fun HomeScreenContent(
 }
 
 @Composable
-fun SingleNoteItem(note: Note) {
+fun SingleNoteItem(
+    note: Note,
+    onDeleteClick: (String) -> Unit,
+    onNoteClick: (String) -> Unit
+) {
     Card(
         modifier = Modifier
             .padding(8.dp)
+            .clickable { onNoteClick(note.id) }
             .fillMaxWidth(),
         elevation = CardDefaults.cardElevation(
             defaultElevation = 10.dp
@@ -102,7 +136,7 @@ fun SingleNoteItem(note: Note) {
                 .fillMaxWidth()
         ) {
             IconButton(
-                onClick = { /*TODO*/ },
+                onClick = { onDeleteClick(note.id) },
                 modifier = Modifier
                     .align(Alignment.End)
                     .size(24.dp)
@@ -120,7 +154,7 @@ fun SingleNoteItem(note: Note) {
             )
             Text(
                 text = note.content,
-                fontSize = 12.sp, maxLines = 2, overflow = TextOverflow.Ellipsis
+                fontSize = 12.sp, maxLines = 4, overflow = TextOverflow.Ellipsis
             )
         }
     }
@@ -134,13 +168,26 @@ fun PreviewScreen(){
         title = "SasNote",
         content = "SasContent34345235455f2454f4g23443f34g2f435g23424g2f34333333333333333333333333333333333333333333333333333333333333333333333"
     ))*/
-    HomeScreenContent(notesList = mutableListOf<Note>(
-        Note(id = "sas",
-            title = "SasNote",
-            content = "SasContent"),
-        Note(id = "sasa",
-            title = "SasNote",
-            content = "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.")
+    HomeScreenContent(
+        notesList = remember {
+            mutableStateListOf<Note>(
+                Note(
+                    id = "sas",
+                    title = "SasNote",
+                    content = "SasContent"
+                ),
+                Note(
+                    id = "sasa",
+                    title = "SasNote",
+                    content = "Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."
+                )
+            )
+        },
+        dbId = "sa23",
+        onAddClick = {},
+        onDeleteClick = {},
+        onNoteClick = {}
     )
-    )
+
+
 }
