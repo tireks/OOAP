@@ -8,11 +8,11 @@ object NoteDatabase {
 
     private val classId = getRandomString(4)
 
-    public fun add(note: Note){
+    fun add(note: Note){
         contentList.add(note)
     }
 
-    public fun showContent() : MutableList<Note>{
+    fun showContent() : MutableList<Note>{
         return contentList
     }
 
