@@ -31,14 +31,14 @@ import com.tirexmurina.singleton.domain.entity.Note
 import com.tirexmurina.singleton.presentation.HomeViewModel
 
 @Composable
-fun HomeScreen(homeViewModel: HomeViewModel = viewModel(),
+fun HomeScreen(viewModel: HomeViewModel = viewModel(),
                onNoteClick: (String) -> Unit
 ){
-    val notesList = homeViewModel.list
+    val notesList = viewModel.list
     HomeScreenContent(
         notesList = notesList,
-        dbId = homeViewModel.dbId,
-        onAddClick = { homeViewModel.addNote() },
+        dbId = viewModel.dbId,
+        onAddClick = { viewModel.addNote() },
         onDeleteClick = {},
         onNoteClick = { onNoteClick(it) }
     )

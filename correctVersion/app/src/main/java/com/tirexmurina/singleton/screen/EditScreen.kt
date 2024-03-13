@@ -7,11 +7,14 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.lifecycle.viewmodel.compose.viewModel
+import com.tirexmurina.singleton.presentation.EditViewModel
 
 @Composable
 fun EditScreen(
     id : String?,
-    backNavigation: () -> Unit
+    backNavigation: () -> Unit,
+    viewModel: EditViewModel = viewModel()
 ){
     Row (
         modifier = Modifier.padding(
@@ -24,7 +27,16 @@ fun EditScreen(
             modifier = Modifier.padding(end = 16.dp)
         )
         if (id != null) {
-            Text(text = id)
+            val noteId = viewModel.getNoteById(id)
+            if (noteId != null){
+                Text(text = noteId.id,
+                        modifier = Modifier.padding(end = 16.dp)
+                )
+                Text(text = noteId.title,
+                    modifier = Modifier.padding(end = 16.dp)
+                )
+            }
+
         }
     }
     BackHandler {
