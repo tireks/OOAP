@@ -16,7 +16,7 @@ object NoteDatabase {
         return contentList
     }
 
-    public fun delete(id: String) {
+    fun delete(id: String) {
         contentList.forEach{
             if (id == it.id){
                 contentList.remove(it)
