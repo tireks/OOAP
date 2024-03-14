@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.tirexmurina.singleton.app-mergeDebugResources-48:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\tire_\\.gradle\\caches\\transforms-3\\ec8d992bdd9786c7dc69fed0d94ba69d\\transformed\\core-1.10.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                }
+            ]
+        }
+    ]
+}
