@@ -3,4 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home_screen_catalog_title">Каталог</string>
+    <string name="details_stock">Осталось %s штук</string>
+    <string name="pricing_template_string">%s $</string>
+    <string name="discount_template_string">-%s %%</string>
 </resources>
